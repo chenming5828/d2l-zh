@@ -25,19 +25,17 @@
 
 from setuptools import setup, find_packages
 import d2l
-
 requirements = [
-    'jupyter>=1.1.1',
-    'numpy>=1.26.4',
-    'matplotlib>=3.9.0',
-    'requests>=2.32.3',
-    'pandas>=2.2.2'
+    'jupyter==1.0.0',
+    'numpy',
+    'matplotlib==3.5.1',
+    'requests==2.25.1',
+    'pandas==1.2.4'
 ]
-
 setup(
     name='d2l',
     version=d2l.__version__,
-    python_requires='>=3.10', # 修改最低版本，3.13满足
+    python_requires='>=3.5',
     author='D2L Developers',
     author_email='d2l.devs@gmail.com',
     url='https://d2l.ai',
